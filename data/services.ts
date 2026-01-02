@@ -31,7 +31,7 @@ export const services: Service[] = [
     categories: ["Emergency entry", "Lock replacement", "Boarding"],
     highlights: ["30–60 minute ETA", "Transparent call-out", "Insurance-compliant parts"],
     cta: "Call an emergency locksmith",
-    image: "https://images.unsplash.com/photo-1558002038-1091a166111c?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&q=80&w=800",
     emergency: true,
     areaFocus: ["NW3", "NW6", "NW11"]
   },
@@ -77,7 +77,7 @@ export const services: Service[] = [
     categories: ["Doors", "Storage", "Repairs"],
     highlights: ["Scribed finishes", "Solid fixings", "Respect for listed homes"],
     cta: "Speak with a carpenter",
-    image: "https://images.unsplash.com/photo-1601058268499-e52642d18d89?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800",
     emergency: false,
     areaFocus: ["NW3", "NW6"]
   },
