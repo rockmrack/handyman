@@ -1,12 +1,13 @@
 import Link from "next/link";
+import type { Route } from "next";
 import { ReactNode } from "react";
 
 interface HeroProps {
   eyebrow?: string;
   heading: string;
   subheading: string;
-  primaryCta?: { label: string; href: string };
-  secondaryCta?: { label: string; href: string };
+  primaryCta?: { label: string; href: Route };
+  secondaryCta?: { label: string; href: Route };
   children?: ReactNode;
 }
 

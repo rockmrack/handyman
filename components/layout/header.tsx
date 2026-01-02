@@ -1,6 +1,9 @@
 import Link from "next/link";
+import type { Route } from "next";
 
-const navLinks = [
+type NavLink = { href: Route; label: string };
+
+const navLinks: NavLink[] = [
   { href: "/services", label: "Services" },
   { href: "/emergency", label: "Emergency 24/7" },
   { href: "/pricing", label: "Pricing" },

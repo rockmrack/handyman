@@ -1,6 +1,9 @@
 import Link from "next/link";
+import type { Route } from "next";
 
-const footerLinks = [
+type FooterLink = { href: Route; label: string };
+
+const footerLinks: FooterLink[] = [
   { href: "/services", label: "Services" },
   { href: "/pricing", label: "Pricing" },
   { href: "/areas", label: "Areas" },

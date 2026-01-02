@@ -7,7 +7,7 @@ export function PricingTable() {
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">Pricing</p>
         <h2 className="text-2xl font-semibold text-slate-900">Transparent, North London-aligned pricing</h2>
         <p className="text-sm text-slate-700">
-          Prices shown as ranges and "from" rates to reflect typical North London work. Parking and materials are recharged at cost.
+          Prices shown as ranges and “from” rates to reflect typical North London work. Parking and materials are recharged at cost.
         </p>
       </div>
       <div className="grid gap-4 md:grid-cols-2">
