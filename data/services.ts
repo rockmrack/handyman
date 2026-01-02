@@ -5,6 +5,7 @@ export type Service = {
   categories: string[];
   highlights: string[];
   cta: string;
+  image: string;
   emergency?: boolean;
   areaFocus?: string[];
 };
@@ -18,6 +19,7 @@ export const services: Service[] = [
     categories: ["Repairs", "Installations", "Mounting", "Finishing"],
     highlights: ["DBS-vetted team", "1h minimum then 15-min billing", "Materials at cost + receipt"],
     cta: "Book a trusted handyman",
+    image: "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&q=80&w=800",
     emergency: false,
     areaFocus: ["NW3", "NW6", "NW8"]
   },
@@ -29,6 +31,7 @@ export const services: Service[] = [
     categories: ["Emergency entry", "Lock replacement", "Boarding"],
     highlights: ["30–60 minute ETA", "Transparent call-out", "Insurance-compliant parts"],
     cta: "Call an emergency locksmith",
+    image: "https://images.unsplash.com/photo-1558002038-1091a166111c?auto=format&fit=crop&q=80&w=800",
     emergency: true,
     areaFocus: ["NW3", "NW6", "NW11"]
   },
@@ -40,6 +43,7 @@ export const services: Service[] = [
     categories: ["Leaks", "Radiators", "Appliance hook-up", "Bathrooms"],
     highlights: ["Same-day leak response", "Gas Safe partners for boiler work", "Clean, careful work"],
     cta: "Book a plumber",
+    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80&w=800",
     emergency: true,
     areaFocus: ["NW3", "N6", "NW2"]
   },
@@ -51,6 +55,7 @@ export const services: Service[] = [
     categories: ["Lighting", "Power", "Testing"],
     highlights: ["NICEIC-supervised partners", "Minor works certificates", "Safe fault finding"],
     cta: "Book an electrician",
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800",
     emergency: true,
     areaFocus: ["NW3", "NW11", "N2"]
   },
@@ -61,6 +66,7 @@ export const services: Service[] = [
     categories: ["Walls", "Woodwork", "Feature walls"],
     highlights: ["Dust control & protection", "Premium paints specified", "Colour matching"],
     cta: "Plan a decorating visit",
+    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=800",
     emergency: false,
     areaFocus: ["NW3", "NW8"]
   },
@@ -71,6 +77,7 @@ export const services: Service[] = [
     categories: ["Doors", "Storage", "Repairs"],
     highlights: ["Scribed finishes", "Solid fixings", "Respect for listed homes"],
     cta: "Speak with a carpenter",
+    image: "https://images.unsplash.com/photo-1601058268499-e52642d18d89?auto=format&fit=crop&q=80&w=800",
     emergency: false,
     areaFocus: ["NW3", "NW6"]
   },
@@ -81,6 +88,7 @@ export const services: Service[] = [
     categories: ["Planned visits", "Seasonal checks", "Rapid call-outs"],
     highlights: ["Dedicated account manager", "Monthly reporting", "Compliance reminders"],
     cta: "Arrange a maintenance plan",
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800",
     emergency: false,
     areaFocus: ["NW3", "NW6", "NW11"]
   }

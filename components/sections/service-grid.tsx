@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services } from "@/data/services";
 
 export function ServiceGrid({ showCtas = true }: { showCtas?: boolean }) {
@@ -19,6 +20,14 @@ export function ServiceGrid({ showCtas = true }: { showCtas?: boolean }) {
       <div className="grid gap-4 md:grid-cols-2">
         {services.map((service) => (
           <div key={service.slug} className="card-surface flex h-full flex-col gap-3 p-6">
+            <div className="relative h-48 w-full overflow-hidden rounded-xl">
+              <Image
+                src={service.image}
+                alt={service.title}
+                fill
+                className="object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">{service.categories.join(" • ")}</p>

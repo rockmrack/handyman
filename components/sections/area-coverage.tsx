@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { areas } from "@/data/areas";
 
 export function AreaCoverage() {
@@ -17,6 +18,14 @@ export function AreaCoverage() {
       <div className="grid gap-3 md:grid-cols-2">
         {areas.map((area) => (
           <div key={area.slug} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-subtle">
+            <div className="relative h-32 w-full overflow-hidden rounded-xl mb-3">
+              <Image
+                src={area.image}
+                alt={area.name}
+                fill
+                className="object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">{area.postcodePrefixes.join(", ")}</p>

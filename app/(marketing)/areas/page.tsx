@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { areas } from "@/data/areas";
 
 export default function AreasPage() {
@@ -12,6 +13,14 @@ export default function AreasPage() {
       <div className="grid gap-4 md:grid-cols-2">
         {areas.map((area) => (
           <div key={area.slug} className="card-surface space-y-3 p-6">
+            <div className="relative h-32 w-full overflow-hidden rounded-xl mb-3">
+              <Image
+                src={area.image}
+                alt={area.name}
+                fill
+                className="object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">{area.postcodePrefixes.join(", ")}</p>
