@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { AreaCoverage } from "@/components/sections/area-coverage";
 import { FaqAccordion } from "@/components/sections/faq";
 import { Hero } from "@/components/sections/hero";
@@ -15,6 +16,7 @@ export default function HomePage() {
         subheading="Same-day handyman, locksmith, plumbing, electrical, and decorating across Hampstead, Belsize Park, West Hampstead, Highgate, Swiss Cottage, and nearby postcodes."
         primaryCta={{ label: "Book a visit", href: "/contact" }}
         secondaryCta={{ label: "View pricing", href: "/pricing" }}
+        backgroundImage="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=2000"
       >
         <div className="space-y-4 text-sm text-slate-800">
           <div className="rounded-2xl bg-slate-900 p-4 text-white shadow-subtle">
@@ -43,6 +45,14 @@ export default function HomePage() {
         <PricingTable />
         <div className="space-y-4">
           <div className="card-surface border-grid p-6">
+            <div className="relative h-40 w-full overflow-hidden rounded-xl mb-4">
+              <Image
+                src="https://images.unsplash.com/photo-1599619351208-3e6c839d6828?auto=format&fit=crop&q=80&w=800"
+                alt="Fast quote"
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">Fast quote</p>
             <h3 className="text-xl font-semibold text-slate-900">Send details for a fast estimate</h3>
             <p className="text-sm text-slate-700">Photo uploads recommended; we respond quicker for NW3/NW6/NW8/NW11/N6 postcodes.</p>
